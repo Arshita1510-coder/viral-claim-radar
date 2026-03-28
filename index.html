@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viral Claim Radar</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h2>🛰 Viral Claim Radar</h2>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="history.html">History</a>
+</div>
+
+</nav>
+
+
+<section class="hero">
+
+<h1>Fact-Check Copilot for Social Feeds</h1>
+<p>Detect misinformation instantly using AI and trusted sources.</p>
+
+<button class="howBtn" onclick="toggleHow()">How It Works</button>
+
+</section>
+
+
+<section class="how" id="howSection">
+
+<h2>How It Works</h2>
+
+<div class="steps">
+
+<div class="card">
+<h3>1️⃣ Paste Claim</h3>
+<p>Enter any viral claim circulating on social media.</p>
+</div>
+
+<div class="card">
+<h3>2️⃣ Upload Evidence</h3>
+<p>Add screenshots or links from social media posts.</p>
+</div>
+
+<div class="card">
+<h3>3️⃣ AI Verification</h3>
+<p>Our AI scans trusted databases and fact checking websites.</p>
+</div>
+
+<div class="card">
+<h3>4️⃣ Get Results</h3>
+<p>Receive verified results with confidence score.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="analyzer">
+
+<div class="glass">
+
+<h2>Analyze a Claim</h2>
+
+<select>
+<option>English</option>
+<option>Hindi</option>
+<option>Spanish</option>
+</select>
+
+<textarea id="claimText" placeholder="Enter viral claim from social media"></textarea>
+<input type="file">
+
+<div class="buttons">
+
+<button class="analyze" onclick="analyzeClaim()">Analyze Claim</button>
+
+<button class="voice" onclick="startVoice()">🎤 Speak Claim</button>
+
+</div>
+<div id="resultCard" class="result-card" style="display:none;">
+
+<h3>Evidence Card</h3>
+
+<p id="score"></p>
+
+<div id="statusBox" class="status-box"></div>
+
+<div class="explanation-panel">
+
+<p id="explanation"></p>
+
+<p id="manipulation"></p>
+
+<p id="sources"></p>
+
+<p id="contradictions"></p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="features">
+
+<h2>Key Features</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+<h3>🌍 Multilingual</h3>
+<p>Supports multiple languages for global misinformation detection.</p>
+</div>
+
+<div class="feature">
+<h3>🎤 Voice Input</h3>
+<p>Speak claims directly for quick fact checking.</p>
+</div>
+
+<div class="feature">
+<h3>📊 Evidence Based</h3>
+<p>Results supported by credible sources.</p>
+</div>
+
+<div class="feature">
+<h3>📁 Claim History</h3>
+<p>Track previously verified claims.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Fact-Check Copilot | Combating Misinformation with AI</p>
+
+<!-- THEME ICONS -->
+
+<div class="themes">
+
+<span onclick="setTheme('black')" title="Black Theme">⚫</span>
+
+<span onclick="setTheme('purple')" title="Purple Theme">🟣</span>
+
+<span onclick="setTheme('white')" title="White Theme">⚪</span>
+
+</div>
+
+</nav>
+
+<script src="script.js"></script>
+</footer>
+
+
+
+</body>
+</html> 
