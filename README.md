@@ -64,7 +64,7 @@ viral-claim-radar
 
 Clone the repository
 
-git clone https://github.com/your-username/viral-claim-radar.git
+git clone https://github.com/Arshita1510-coder/viral-claim-radar.git
 
 Go to the project folder
 
